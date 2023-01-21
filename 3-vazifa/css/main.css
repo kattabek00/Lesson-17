@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.main {
+   background-color: #03111c;
+}
+h1 {
+   font-family: "Cinzel", serif;
+   font-size: 80px;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.pages {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+
+.page__1 {
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+   animation-name: NAJOT;
+   animation-duration: 0.9s;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+}
+
+.page__2 {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   animation-name: TALIM;
+   animation-duration: 0.8s;
+   animation-direction: alternate;
+   animation-timing-function: ease-out;
+}
+
+.image-logo {
+   width: 300px;
+   height: 300px;
+   color: #ffffff;
+   animation-name: image-logo;
+   animation-duration: 1.6s;
+   animation-timing-function: linear;
+}
+
+.word__1 {
+   color: white;
+   animation-name: down;
+   animation-delay: 1s;
+   animation-duration: 0.8s;
+   animation-fill-mode: forwards;
+}
+.word__2 {
+   color: white;
+   animation-name: down;
+   animation-delay: 1.2s;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+.word__3 {
+   color: white;
+   animation-name: down;
+   animation-delay: 1.4s;
+   animation-duration: 1.2s;
+   animation-fill-mode: forwards;
+}
+.word__4 {
+   color: white;
+   animation-name: down;
+   animation-delay: 1.6s;
+   animation-duration: 1.4s;
+   animation-fill-mode: forwards;
+}
+.word__5 {
+   color: white;
+   animation-name: down;
+   animation-delay: 1.8s;
+   animation-duration: 1.6s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes image-logo {
+   50% {
+      transform: scale(1.5) translateY(50px);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes NAJOT {
+   50% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-100px);
+   }
+}
+@keyframes TALIM {
+   50% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(100px);
+   }
+}
+
+@keyframes down {
+   100% {
+      transform: translateY(100px);
+   }
+}

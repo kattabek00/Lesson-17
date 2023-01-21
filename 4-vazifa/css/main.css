@@ -1,0 +1,32 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: #00123a;
+}
+.container {
+}
+
+.container__music {
+    width: 100px;
+   margin: 400px auto;
+}
+i {
+   font-size: 70px;
+   border-radius: 50%;
+   color: white;
+   transform: translateZ(50px);
+   box-shadow: 10px 10px 80px 45px #74859b;
+   animation: alternate;
+   animation: main 2.2s linear infinite;
+}
+@keyframes main {
+   50% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
